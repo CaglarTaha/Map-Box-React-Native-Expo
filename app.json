@@ -15,7 +15,13 @@
         "@rnmapbox/maps",
         {
           "RNMapboxMapsDownloadToken": "sk.eyJ1IjoiYXlyYW5pIiwiYSI6ImNsem9icHh4ODB6b2QybHF3amxudXRtMWsifQ.Bk4Cw7ESGATiFMDahAG78w",
-           "RNMapboxMapsVersion": "11.0.0"
+          "RNMapboxMapsVersion": "11.0.0"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow MapBox to use your location."
         }
       ]
     ],
@@ -35,7 +41,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.MapApp"
     },
     "android": {
       "adaptiveIcon": {

@@ -1,18 +1,46 @@
 import { StyleSheet, View } from 'react-native';
 import React from 'react';
-import Mapbox, { MapView } from '@rnmapbox/maps';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import Mapbox, { Camera, LocationPuck, MapView, ShapeSource, SymbolLayer } from '@rnmapbox/maps';
+import markersData from '../mock/Markes/data.json'; // Importing the markers data
 
-
-const Tokken:any = process.env.ACCES_TOKKEN || null
-
-Mapbox.setAccessToken(Tokken);
+Mapbox.setAccessToken(process.env.ACCES_TOKKEN|| '');
 
 export default function Map() {
+  const features:any = markersData.map((marker:any) => ({
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [marker.longitude, marker.latitude],
+    },
+    properties: {
+      id: marker.id,
+      title: marker.title,
+      description: marker.description,
+    },
+  }));
+
+
   return (
-    <SafeAreaView style={styles.container}>
-      <MapView style={styles.map} />
-    </SafeAreaView>
+    <View style={styles.container}>
+      <MapView 
+        style={styles.map} 
+        styleURL='mapbox://styles/mapbox/dark-v11'
+      >
+        <Camera followUserLocation followZoomLevel={14} />
+        <LocationPuck puckBearingEnabled puckBearing='course' pulsing={{isEnabled:true}} />
+        <ShapeSource id="markers" shape={{ type: 'FeatureCollection', features }}>
+          <SymbolLayer
+            id="markerLayer"
+            style={{
+              iconImage: 'pin', 
+              iconSize: 1.5,
+              iconAllowOverlap: true,
+              iconIgnorePlacement: true,
+            }}
+          />
+        </ShapeSource>
+      </MapView>
+    </View>
   );
 }
 

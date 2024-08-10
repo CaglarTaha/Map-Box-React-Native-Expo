@@ -1,0 +1,12 @@
+[
+    {"id": 1, "latitude": 37.7749, "longitude": -122.4194, "title": "Marker 1", "description": "Downtown San Francisco"},
+    {"id": 2, "latitude": 37.7769, "longitude": -122.4174, "title": "Marker 2", "description": "Near Union Square"},
+    {"id": 3, "latitude": 37.7739, "longitude": -122.4214, "title": "Marker 3", "description": "Near Civic Center"},
+    {"id": 4, "latitude": 37.7789, "longitude": -122.4154, "title": "Marker 4", "description": "Close to Chinatown"},
+    {"id": 5, "latitude": 37.7719, "longitude": -122.4234, "title": "Marker 5", "description": "Near Financial District"},
+    {"id": 6, "latitude": 37.7809, "longitude": -122.4134, "title": "Marker 6", "description": "Near Nob Hill"},
+    {"id": 7, "latitude": 37.7699, "longitude": -122.4254, "title": "Marker 7", "description": "Close to SOMA"},
+    {"id": 8, "latitude": 37.7829, "longitude": -122.4114, "title": "Marker 8", "description": "Near Russian Hill"},
+    {"id": 9, "latitude": 37.7679, "longitude": -122.4274, "title": "Marker 9", "description": "Close to Mission District"},
+    {"id": 10, "latitude": 37.7849, "longitude": -122.4094, "title": "Marker 10", "description": "Near North Beach"}
+]
