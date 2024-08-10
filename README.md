@@ -21,6 +21,7 @@ Follow these steps to set up the project on your local machine:
   npm install -g expo-cli
   ```
 - **Mapbox Access Token**: Sign up for a free Mapbox account and generate an access token [here](https://account.mapbox.com).
+- Install Mapbox for Expo (https://rnmapbox.github.io/docs/install)
 
 ### Installation
 
