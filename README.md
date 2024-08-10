@@ -2,6 +2,9 @@
 
 Welcome to **MapApp**, a React Native application built with Expo that leverages Mapbox for seamless and interactive maps. This project is designed to be easily accessible and customizable for developers of all levels. Whether you're a beginner or an experienced developer, you can get up and running with Mapbox in just a few steps!
 
+
+![Simulator Screenshot](./Simulator%20Screenshot%20-%20iPhone%2015%20-%202024-08-10%20at%2023.18.30.png)
+
 ## Features
 
 - **Mapbox Integration**: Explore the powerful mapping features provided by Mapbox.
