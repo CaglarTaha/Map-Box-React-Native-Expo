@@ -53,6 +53,9 @@ Follow these steps to set up the project on your local machine:
 5. **Run the App**:
    - Use the Expo Go app on your iOS or Android device to scan the QR code and run the app instantly.
 
+**NOTE: please check version of your sdk. because this project use SDK 51 may be not compatible with your expo go application.
+So we need to upgrade the SDK using this command: npm install expo@^54.0.0 OR we can download an old expo go application (not supported)**
+
 ### Project Structure
 
 ```bash
